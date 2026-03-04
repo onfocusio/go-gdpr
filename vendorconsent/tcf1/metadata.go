@@ -136,7 +136,7 @@ func (c consentMetadata) VendorDisclosed(id uint16) bool {
 	return false
 }
 
-func (c consentMetadata) VendorDisclosedMaxVendorId() uint16 {
+func (c consentMetadata) VendorDisclosedMaxVendorID() uint16 {
 	return 0
 }
 

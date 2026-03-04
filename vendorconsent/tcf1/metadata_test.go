@@ -75,7 +75,7 @@ func TestVendorDisclosed(t *testing.T) {
 func TestVendorDisclosedMaxVendorID(t *testing.T) {
 	consent, err := Parse(decode(t, "BOOG4uyOOG4uyABFZBAAABAAAAAAEA"))
 	assertNilError(t, err)
-	assertUInt16sEqual(t, 0, consent.VendorDisclosedMaxVendorId())
+	assertUInt16sEqual(t, 0, consent.VendorDisclosedMaxVendorID())
 }
 
 func TestHasDisclosedVendors(t *testing.T) {

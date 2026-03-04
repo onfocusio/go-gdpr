@@ -72,7 +72,7 @@ type VendorConsents interface {
 	// this returns false to maintain backward compatibility.
 	VendorDisclosed(id uint16) bool
 
-	VendorDisclosedMaxVendorId() uint16
+	VendorDisclosedMaxVendorID() uint16
 
 	// HasDisclosedVendors returns true if the consent string includes a disclosedVendors segment.
 	// This method is particularly useful during the TCF 2.3 transition phase (mandatory from March 1st, 2025)

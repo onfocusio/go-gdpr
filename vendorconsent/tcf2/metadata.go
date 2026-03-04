@@ -217,8 +217,8 @@ func (c ConsentMetadata) VendorDisclosed(id uint16) bool {
 	return c.disclosedVendors.VendorConsent(id)
 }
 
-// VendorDisclosedMaxVendorId returns the maximum vendor ID in the disclosed vendors segment (TCF 2.3).
-func (c ConsentMetadata) VendorDisclosedMaxVendorId() uint16 {
+// VendorDisclosedMaxVendorID returns the maximum vendor ID in the disclosed vendors segment (TCF 2.3).
+func (c ConsentMetadata) VendorDisclosedMaxVendorID() uint16 {
 	if c.disclosedVendors == nil {
 		return 0
 	}

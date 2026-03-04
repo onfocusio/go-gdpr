@@ -132,7 +132,7 @@ func TestSegmentsInAnyOrder(t *testing.T) {
 	assertNilError(t, err)
 	assertBoolsEqual(t, true, consent1.HasDisclosedVendors())
 
-	assertUInt16sEqual(t, 26, consent1.VendorDisclosedMaxVendorId())
+	assertUInt16sEqual(t, 26, consent1.VendorDisclosedMaxVendorID())
 
 	assertBoolsEqual(t, true, consent1.VendorDisclosed(1))
 	assertBoolsEqual(t, true, consent1.VendorDisclosed(3))
